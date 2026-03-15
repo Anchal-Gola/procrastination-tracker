@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>procastination tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PROCRASTINATION TRACKER 😀</h1>
+     
+<button id="darkModeToggle">Toggle Dark Mode</button>
+
+  <div class="starts">
+    <span id="totalTasks">Tasks Added: 0</span>
+    <span id="completedTasks">Completed: 0</span>
+    <span id="pendingTasks">Pending: 0</span>
+  </div>
+
+  <div class="progress-container">
+  <p>Productivity Progress</p>
+  <div class="progress-bar">
+    <div id="progressFill"></div>
+  </div>
+</div>
+ 
+<div class="timer-container">
+  <h3>Focus Timer</h3>
+  <div id="timer">55:00</div>
+
+  <button id="startTimer">Start</button>
+  <button id="pauseTimer">Pause</button>
+  <button id="resetTimer">Reset</button>
+</div>
+
+ <div class="task-input">
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskBtn">Add Task</button>
+  </div> 
+
+  <div id="undoBox" style="display:none;">
+Task deleted
+<button id="undoBtn">Undo</button>
+</div>
+  <ul id="taskList"></ul> 
+  
+  <script src="first.js"></script>
+  
+</body>
+</html>

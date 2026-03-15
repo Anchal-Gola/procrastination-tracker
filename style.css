@@ -1,0 +1,204 @@
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f4f6f8;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+h1{
+    margin-bottom: 30px;
+}
+.task-input{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#taskInput{
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#addTaskBtn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#addTaskBtn:hover{
+    background-color: #45a049;
+}
+#taskList{
+    padding: 0px;
+    width: 350px;
+    list-style: none;
+}
+#taskList li{
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.starts{
+    display:  flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+ 
+.progress-container{
+width:350px;
+margin-bottom:20px;
+}
+
+.progress-bar{
+width:100%;
+height:20px;
+background:#ddd;
+border-radius:10px;
+overflow:hidden;
+}
+
+#progressFill{
+height:100%;
+width:0%;
+background:#4CAF50;
+transition:0.3s;
+}
+
+.timer-container{
+width:350px;
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+margin-bottom:20px;
+}
+
+#timer{
+font-size:40px;
+margin:10px 0;
+}
+
+.timer-container button{
+padding:8px 15px;
+margin:5px;
+border:none;
+border-radius:5px;
+background:#4CAF50;
+color:white;
+cursor:pointer;
+}
+
+.timer-container button:hover{
+background:#45a049;
+}
+
+.dark-mode{
+background-color:#1e1e1e;
+color:white;
+}
+
+.dark-mode li{
+background:#333;
+}
+
+#darkModeToggle{
+padding:8px 15px;
+margin-bottom:20px;
+border:none;
+border-radius:5px;
+background:#333;
+color:white;
+cursor:pointer;
+}
+
+.dark-mode{
+background-color:#1e1e1e;
+color:white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode span{
+color:white;
+}
+
+.dark-mode li{
+background:#333;
+color:white;
+}
+
+.dark-mode button{
+background:#555;
+color:white;
+}
+
+.dark-mode #timer{
+color:white;
+}
+
+.dark-mode #taskList span{
+color:white;
+}
+
+.dark-mode #taskList li{
+background:#333;
+color:white;
+}
+
+.dark-mode .stats span{
+color:white;
+}
+
+.dark-mode .progress-container p{
+color:white;
+}
+.dark-mode *{
+color:white;
+}
+
+.dark-mode .timer-container{
+background:#333;
+}
+
+.dark-mode .timer-container h3{
+color:white;
+}
+
+.dark-mode #timer{
+color:white;
+}
+
+.dark-mode #taskList span{
+color:white;
+}
+
+.dark-mode .stats span{
+color:white;
+}
+#taskList li{
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform: translateY(10px);}
+  to{opacity:1; transform: translateY(0);}
+}
+
+#undoBox{
+background:#ffeeba;
+padding:10px;
+margin-bottom:10px;
+border-radius:5px;
+display:flex;
+justify-content:space-between;
+}
